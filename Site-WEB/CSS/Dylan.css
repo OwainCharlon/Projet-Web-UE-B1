@@ -1,0 +1,126 @@
+@font-face{
+	font-family: 'Bebas';
+	src: url("../Font/BEBAS.ttf");
+}
+
+
+
+.coupeGauche {
+
+	height: 100%;
+	width:20%;
+
+	position: fixed;
+	z-index: -1;
+	top:0;
+	overflow-x: hidden;
+	padding-top: 20px;
+	left:0;
+	background-color: #69374B;
+
+	text-align: center;
+
+}
+
+.coupeGauche img {
+
+	height: 23%;
+
+	border-radius: 50%;
+
+	margin-top: 1em;
+
+
+}
+
+.navbar li,a {
+
+    color: white;
+    font-family: 'Bebas';
+    font-size: 20px;
+    line-height: 40px;
+
+
+    text-decoration: none;
+    list-style-type: none;
+
+    text-transform: uppercase;
+}
+
+.navbar li,a:hover{
+
+	color: #0DD1FA;
+	transition: color 1s linear;
+}
+
+
+
+.navbar{
+
+	height: 100%;
+	width: 20%;
+
+	margin :0;
+	padding: 0;
+
+	top: 35%;
+
+	position: fixed;
+}
+
+
+
+.coupeDroit {
+
+	height: 100%;
+	width:80%;
+	position: fixed;
+	z-index: -1;
+	top:0;
+	overflow-x: hidden;
+	padding-top: 0px;
+	right:0;
+	background-color: white;
+
+	font-family: "Bebas";
+	word-spacing: 12px;
+}
+}
+
+.ParcoursScolaire{
+	height: 100%;
+	width: 100%;
+	text-align: center;
+	justify-content: center;
+
+	right: 2em;
+}
+
+.Acceuil {
+
+	height: 100%;
+	width: 100%;
+}
+
+h1{
+	text-align: center;
+	justify-content: center;
+}
+
+
+
+p{
+	
+	margin-top:7em;
+	height: 100%;
+	width: 100%;
+	text-align: right;
+	justify-content: right;
+
+}
+.ParcoursScolaire{
+	height: 100%;
+	width: 100%;
+	text-align: center;
+	justify-content: center;
+}
