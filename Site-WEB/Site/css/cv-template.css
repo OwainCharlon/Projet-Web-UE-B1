@@ -1,0 +1,499 @@
+@-ms-viewport{
+  width: device-width;
+}
+
+@font-face{
+	font-family: 'Bebas';
+	src: url('../fonts/BEBAS.ttf');
+}
+@font-face{
+	font-family: 'BlackLabel';
+	src: url('../fonts/BlackLabel-Light.ttf');
+}
+
+
+
+
+/* Création de la navbar latérale */
+body {
+  display: grid;
+  grid-template-columns: 20% 80%;
+  padding: 0;
+  margin-left: 0;
+  margin-top: 0;
+}
+
+*{
+
+  font-family: 'Bebas';
+  color: white;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+/* The Overlay (background) */
+.overlay {
+  /* Height & width depends on how you want to reveal the overlay (see JS below) */
+  height: 100%;
+  width: 0;
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  background-color: rgb(0,0,0); /* Black fallback color */
+  background-color: rgba(0,0,0, 0.9); /* Black w/opacity */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  transition: 0.5s;
+  z-index:3;/* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+
+/* Position the content inside the overlay */
+.overlay-content {
+  position: relative;
+  top: 25%; /* 25% from the top */
+  width: 100%; /* 100% width */
+  text-align: center; /* Centered text/links */
+  margin-top: 30px;
+
+}
+
+/* The navigation links inside the overlay */
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block; /* Display block instead of inline */
+  transition: 0.3s;/* Transition effects on hover (color) */
+}
+
+/* When you mouse over the navigation links, change their color */
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+/* Position the close button (top right corner) */
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+
+}
+
+#section-sc, #section-exp,#section-comp,.section-hobbies {
+  height: 100vh;
+  width: 80vw;
+}
+.section-cv {
+  height: auto;
+  width: 80vw;
+}
+
+#section-mobile-profile{
+  display: none;
+}
+
+.navbar{
+  grid-column: 1;
+  height: 100%;
+  width:20vw;
+  position: fixed;
+  z-index: 1;
+  overflow: hidden;
+  top:0;
+  padding-top: 20px;
+  left:0;
+  background-color: #815D82;
+  text-align: center;
+  justify-content: center;
+
+}
+
+.profile h1{
+  word-spacing: 5px;
+  color: black;
+}
+
+header nav ul li{
+
+  height: 100%;
+  width: 100%;
+  padding-top: 4px;
+
+}
+
+header nav ul li a{
+
+  word-spacing: 4px;
+
+}
+
+.profile {
+
+  height: 30%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+
+}
+
+#profile-picture{
+
+  border-radius: 50%;
+  width: 65%;
+  position: relative;
+
+}
+
+.menu{
+
+  width: 100%;
+  position: absolute;
+  top:40%;
+
+}
+
+/* Création de la main contenant toutes les informations relatives au profil */
+
+.side-right {
+      grid-column: 2;
+      height: 100%;
+      width: 100%;
+      z-index: 0;
+      right: 0;
+      background-color: white;
+      font-family: "Bebas";
+      word-spacing: 12px;
+      display: inline-block;
+}
+/*  CSS différentes sections */
+
+#description, #experiences,#competences{
+
+    margin-top: 20px;
+		height: 100%;
+		width: 100%;
+
+}
+
+ .title-school-career, .title-experiences, .title-hobbies{
+
+
+  height: 10vh;
+  width: 100%;
+  right: 0;
+  text-align: left;
+
+  margin-top: 20px;
+  margin-bottom: 100px;
+}
+
+.title-description{
+  height: 10%;
+  width: 100%;
+  right: 0;
+  text-align: left;
+
+  margin-top: 20px;
+}
+
+.title-competences{
+
+
+  height: 10%;
+  width: 100%;
+  right: 0;
+  text-align: left;
+
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+.title-description h1, .title-school-career h1, .title-experiences h1,.title-competences h1,.title-hobbies h1{
+    margin-top: 30px;
+    color: #815D82;
+    right: 30px;
+    text-align: right;
+    margin-right: 30px;
+
+}
+
+/*  Partie description*/
+
+.description-text{
+    height: auto;
+    width: 100%;
+    text-align: center;
+
+}
+
+.description-text p{
+  margin-top:10px;
+  color: black;
+  font-family: 'Arial';
+  text-align: justify;
+  font-size: 13px;
+  padding: 30px;
+  word-spacing: 1px;
+}
+
+/* Partie "Parcours Scolaire" */
+
+#school-career, #competences,#experiences{
+  display: grid;
+  grid-template-columns: 33.3333% 33.3333% 33.3333%;
+}
+#hobbies{
+  display: grid;
+  grid-template-columns: 33.3333% 33.3333% 33.3333%;
+  grid-template-rows: 50% 50% 50%;
+  margin-bottom: 100Px;
+}
+
+#img-school-1{
+
+  background-image: url("../images/bdc.jpg");
+  border-radius: 50%;
+  width: 250px;;
+  height: 250px;
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-position: center;
+  position: relative;
+  justify-content: center;
+}
+
+#img-school-2{
+
+  background-image: url("../images/inajpg.jpg");
+  border-radius: 50%;
+  width: 250px;;
+  height: 250px;
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-position: center;
+  position: relative;
+  justify-content: center;
+}
+
+#img-school-3{
+
+  background-image: url("../images/ynov.png");
+  border-radius: 50%;
+  width: 250px;;
+  height: 250px;
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-position: center;
+  position: relative;
+  justify-content: center;
+}
+
+
+
+.school-column-1 h1,.school-column-2 h1,.school-column-3 h1{
+
+    color:  #815D82;
+    position: relative;
+    font-size: 25px;
+}
+
+.school-column-1 p,.school-column-2 p, .school-column-3 p{
+
+    color:  black;
+    position: relative;
+    font-size: 15px;
+}
+
+.school-column-1,.experiences-column-1,.web-column,.hobbies-column-1,.hobbies-column-4{
+  grid-column: 1;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.school-column-2,.experiences-column-2,.app-column,.hobbies-column-2,.hobbies-column-5{
+  grid-column: 2;
+  height: 100%;
+  width: 100%;
+  left: 33.33%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.school-column-3,.experiences-column-3,.server-column,.hobbies-column-3,.hobbies-column-6{
+  grid-column: 3;
+  height: 100%;
+  width: 100%;
+  left: 66.6666%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+
+
+
+/* Partie "Experiences" */
+
+
+
+
+
+.experiences-column-1 p,.experiences-column-2 p,.experiences-column-3 p{
+    color:  black;
+    position: relative;
+    font-size: 15px;
+}
+
+.experiences-column-1 h1,.experiences-column-2 h1,.experiences-column-3 h1{
+  color:  #815D82;
+  position: relative;
+  font-size: 25px;
+}
+
+
+#img-experiences-1{
+
+  background-image: url("../images/plume.jpg");
+  border-radius: 50%;
+  width: 250px;;
+  height: 250px;
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-position: center;
+  position: relative;
+  justify-content: center;
+}
+
+#img-experiences-2{
+
+  background-image: url("../images/bc.png");
+  border-radius: 50%;
+  width: 250px;;
+  height: 250px;
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-position: center;
+  position: relative;
+  justify-content: center;
+}
+
+#img-experiences-3{
+
+  background-image: url("../images/ugc.png");
+  border-radius: 50%;
+  width: 250px;;
+  height: 250px;
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-position: center;
+  position: relative;
+  justify-content: center;
+}
+
+
+
+/* La partie 'competences' */
+
+
+
+
+
+.web-column h1,.app-column h1,.server-column h1{
+
+    color:  #EEB8EF;
+    position: relative;
+    font-size: 25px;
+}
+
+
+
+/* Images catégorie WEB */
+
+#img-competences-web-1,#img-competences-web-2,#img-competences-web-3{
+  padding-top:50px;
+  width: 40%;
+  height: 20%;
+  position: relative;
+
+}
+
+
+#img-competences-web-4{
+  padding-top:50px;
+  left: 20px;
+  width: 40%;
+  height: 20%;
+  position: relative;
+}
+
+
+/* Images catégorie Logiciel */
+
+
+#img-competences-app-1,#img-competences-app-2{
+  padding-top:50px;
+  width: 50%;
+  height: 20%;
+  position: relative;
+}
+
+.menu-burger {
+  height: 75px;
+  width : 75px;
+  position: fixed;
+  left:2%;
+  top: 2%;
+  background-color: #A4979780;
+  border-radius: 50%;
+  border-color: black;
+  border-style: solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: -1;
+}
+
+
+#imgpute {
+  width: 70%;
+  height: 70%;
+  z-index:-1;
+}
+
+
+/* Images catégorie serveur */
+
+
+#img-competences-server-1, #img-competences-server-2{
+  padding-top:50px;
+  width: 50%;
+  height: 20%;
+  position: relative;
+}
+
+
+/*LA partie Hobbies */
+
+#img-hobbies-1,#img-hobbies-2,#img-hobbies-3, #img-hobbies-4, #img-hobbies-5,#img-hobbies-6{
+  padding-top:20px;
+  width: 40%;
+  position: relative;
+  padding-bottom: 40px;
+
+}
+
+#img-hobbies-1{
+
+  padding-top:30px;
+}
+
+#img-hobbies-4{
+
+    padding-top:50px;
+}

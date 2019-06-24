@@ -1,0 +1,76 @@
+@media screen and (max-device-width: 1300px) {
+
+    #section-sc,#section-hobbies,#section-comp,#section-exp {
+      height: auto;
+      width: 100vw;
+    }
+
+  #competences{
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .school-column-1,.experiences-column-1,
+    .web-column,.hobbies-column-1,.hobbies-column-4{
+      margin-bottom: 80px;
+    }
+
+    .school-column-2,.experiences-column-2,
+    .app-column,.hobbies-column-2,.hobbies-column-5{
+      margin-bottom: 80px;
+    }
+
+    .school-column-3,.experiences-column-3,.server-column,
+    .hobbies-column-3,.hobbies-column-6{
+      margin-bottom: 80px;
+    }
+
+    #img-competences-web-1,#img-competences-web-2,#img-competences-web-3{
+      padding-top:100px;
+      width: 20%;
+    }
+
+    #img-competences-web-4{
+      padding-top:100px;
+      width: 20%;
+    }
+
+    #img-competences-app-1,#img-competences-app-2{
+      padding-top:50px;
+      padding-right: 50px;
+      padding-left: 50px;
+      width: 20%;
+    }
+
+    #img-competences-server-1, #img-competences-server-2{
+      padding-top:100px;
+      width: 20%;
+    }
+
+    #img-hobbies-1,#img-hobbies-2,#img-hobbies-3, #img-hobbies-4, #img-hobbies-5,#img-hobbies-6{
+      padding-top:20px;
+      width: 70%;
+      padding-bottom: 40px;
+
+    }
+    .experiences-column-1 p,.experiences-column-2 p,.experiences-column-3 p{
+      font-size: 10px;
+    }
+
+    .experiences-column-1 h1,.experiences-column-2 h1,.experiences-column-3 h1{
+      font-size: 20px;
+    }
+
+    .school-column-1 h1,.school-column-2 h1,.school-column-3 h1{
+        font-size: 20px;
+    }
+
+    .school-column-1 p,.school-column-2 p, .school-column-3 p{
+        font-size: 10px;
+    }
+
+    .description-text p{
+      font-size: 15px;
+
+    }
+  }

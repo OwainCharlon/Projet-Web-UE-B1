@@ -1,0 +1,244 @@
+@font-face{
+	font-family: 'Bebas';
+	src: url('../font/BEBAS.ttf');
+}
+
+body
+{
+  display: grid;
+  grid-template-columns: 20% 80%;
+  padding: 0;
+  margin-left: 0;
+  margin-top: 0;
+}
+
+*
+{
+
+  font-family: 'Bebas';
+  color: white;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+#section-sc, #section-exp,#section-comp,.section-hobbies {
+  height: 100vh;
+  width: 80vw;
+}
+.section-cv {
+  height: auto;
+  width: 80vw;
+}
+
+
+.navbar{
+  grid-column: 1;
+  height: 100%;
+  width:20vw;
+  position: fixed;
+  z-index: 1;
+  overflow: hidden;
+  top:0;
+  padding-top: 20px;
+  left:0;
+  background-color: #815D82;
+  text-align: center;
+  justify-content: center;
+
+}
+
+.profile h1{
+  word-spacing: 5px;
+  color: black;
+}
+
+header nav ul li{
+
+  height: 100%;
+  width: 100%;
+  padding-top: 4px;
+
+}
+
+header nav ul li a{
+
+  word-spacing: 4px;
+
+}
+
+.profile {
+
+  height: 30%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+
+}
+
+#profile-picture{
+
+  border-radius: 50%;
+  width: 65%;
+  position: relative;
+
+}
+
+.menu{
+
+  width: 100%;
+  position: absolute;
+  top:40%;
+
+}
+
+main
+{
+  grid-column: 2;
+  height: 100%;
+  width: 100%;
+}
+
+
+#modification_form_of_profil_page
+{
+  height: 100%;
+  width: 100%;
+}
+
+
+.legend
+{
+  width: 100%;
+  font-family: 'Bebas';
+  margin-top: 2%;
+  font-size: 45px;
+  color: black;
+  text-align: center;
+}
+
+
+.number
+{
+  margin-bottom: auto;
+  margin-right: 1%;
+  background-color: #815D82;
+	color: white;
+	height: 60px;
+	width: 60px;
+	display: inline-block;
+	border-radius: 15px 15px 15px 0px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+
+#modification_form_of_profil_page label
+{
+  display: block;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	font-family: 'Bebas';
+	color: #815D82;
+	margin-left: 12.5%;
+}
+
+
+#modification_form_of_profil_page textarea
+{
+  font-family: 'bebas';
+	border: none;
+	border-radius: 20px;
+	padding: 20px;
+	width: 75%;
+	background-color: #e8eeef;
+	margin-bottom: 30px;
+  margin-left: 12.5%;
+}
+#modification_form_of_profil_page textarea::placeholder
+{
+	color: transparent;
+}
+#modification_form_of_profil_page textarea:focus
+{
+	background-color: #9B111E33;
+  outline: none;
+	color: black;
+}
+#modification_form_of_profil_page textarea:focus::placeholder
+{
+	color: grey;
+}
+
+
+#modification_form_of_profil_page input[type="text"]
+{
+  font-family: 'bebas';
+	border: none;
+	border-radius: 20px;
+	padding: 20px;
+	width: 75%;
+	background-color: #e8eeef;
+	margin-bottom: 30px;
+  margin-left: 12.5%;
+}
+#modification_form_of_profil_page input[type="text"]::placeholder
+{
+	color: transparent;
+}
+#modification_form_of_profil_page input[type="text"]:focus
+{
+  background-color: #9B111E33;
+  outline: none;
+	color: black;
+}
+#modification_form_of_profil_page input[type="text"]:focus::placeholder
+{
+	color: grey;
+}
+
+
+#modification_form_of_profil_page input[type="submit"]
+{
+	padding: 19px 39px 18px 39px;
+  font-family: 'Bebas';
+	color: #FFF;
+	background-color: #815D82;
+	font-size: 18px;
+	text-align: center;
+	width: 75%;
+  margin-left: 12.5%;
+}
+#modification_form_of_profil_page input[type="submit"]:focus
+{
+  outline: none;
+}
+
+#modification_form_of_profil_page input[type="file"]
+{
+
+	color: grey;
+	font-size: 18px;
+	font-family: 'bebas';
+	border: none;
+	border-radius: 20px;
+	padding: 20px;
+	width: 75%;
+	background-color: #e8eeef;
+	margin-bottom: 30px;
+	margin-left: 12.5%;
+	background-color: #9B111E33;
+}
+
+
+#add_skills_categorie_button
+{
+	padding: 19px 39px 18px 39px;
+	font-family: 'Bebas';
+	color: #FFF;
+	background-color: #815D82;
+	font-size: 18px;
+	text-align: center;
+	width: 75%;
+	margin-left: 40%;
+
+}

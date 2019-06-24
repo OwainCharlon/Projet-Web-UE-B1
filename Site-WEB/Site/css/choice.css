@@ -1,0 +1,58 @@
+@font-face{
+	font-family: 'Bebas';
+	src: url('../fonts/BEBAS.ttf');
+}
+
+*{
+  font-family: 'Bebas';
+  font-size: 30px;
+  word-spacing: 4px;
+}
+
+body{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.gauche{
+  grid-column: 1;
+  display : flex;
+  height: 100%;
+  width : 100%;
+  text-align: center;
+  justify-content: center;
+}
+
+.center{
+  grid-column: 2;
+  display : flex;
+  height: 100%;
+  width : 100%;
+  text-align: center;
+  justify-content: center;
+}
+
+.droite{
+  grid-column: 3;
+  display : flex;
+  height: 100%;
+  width : 100%;
+  text-align: center;
+  justify-content: center;
+}
+
+img{
+  height: 350px;
+  width: 350px;
+  border-radius: 50%;
+  justify-content: center;
+  margin-top: 35%;
+}
+
+
+
+.title{
+  height : 10%;
+  width: 100%;
+  text-align: center;
+}

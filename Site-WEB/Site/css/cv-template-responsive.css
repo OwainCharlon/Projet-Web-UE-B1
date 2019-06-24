@@ -1,0 +1,120 @@
+@media screen and (max-device-width: 850px) {
+
+  .overlay a {font-size: 20px}
+    .overlay .closebtn {
+      font-size: 40px;
+      top: 15px;
+      right: 35px;
+    }
+  .navbar{
+    display: none;
+  }
+
+  header{
+    display: none;
+  }
+
+  body{
+    display: flex;
+    padding: 0;
+    margin: 0;
+  }
+
+  main{
+    width: 100%;
+  }
+
+  .side-right {
+        height: 100%;
+        width: 100%;
+        z-index: 0;
+        right: 0;
+        background-color: white;
+        font-family: "Bebas";
+        word-spacing: 12px;
+        display: inline-block;
+  }
+  #section-sc,#section-hobbies,#section-comp,#section-exp {
+    height: auto;
+    width: 100vw;
+  }
+
+  #school-career, #competences,#experiences,#hobbies{
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .section-cv {
+    height: auto;
+    width: 100vw;
+  }
+  .school-column-1,.experiences-column-1,
+  .web-column,.hobbies-column-1,.hobbies-column-4{
+    margin-bottom: 80px;
+  }
+  .school-column-2,.experiences-column-2,
+  .app-column,.hobbies-column-2,.hobbies-column-5{
+    margin-bottom: 80px;
+  }
+  .school-column-3,.experiences-column-3,.server-column,
+  .hobbies-column-3,.hobbies-column-6{
+    margin-bottom: 80px;
+  }
+
+
+  #section-mobile-profile{
+    height: 100vh;
+    width: 100vw;
+    display: block;
+    text-align: right;
+
+  }
+
+  .img-profil-mobile{
+    height: 100vh;
+    width : 100vw;
+  }
+
+  #img-pmobile{
+    height: 100vh;
+    width: 100vw;
+  }
+
+  #titre-img{
+      position: relative;
+      bottom : 30%;
+      right: 5%;
+      z-index: 1;
+      font-size: 35px;
+      font-family: "BlackLabel";
+  }
+
+  .arrow{
+    height: 50px;
+    width : 50px;
+    position: absolute;
+    bottom:1%;
+    right:43%;
+    z-index: 2;
+  }
+
+  #arrow{
+    height: 100%;
+    width : 100%;
+  }
+
+  .menu-burger{
+
+    z-index: 10000;
+
+  }
+
+  #imgp {
+    width: 70%;
+    height: 70%;
+    z-index:2;
+  }
+
+
+
+}
